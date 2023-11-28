@@ -28,7 +28,7 @@ const Cards = () => {
   }, []);
 
   return (
-    <div className="flex flex-wrap justify-evenly px-3 mt-2">
+    <div className="flex flex-wrap justify-evenly px-2 mt-2">
       {loading ? (
         <div className=" w-full flex justify-center items-center h-96">
           <ThreeDots height={40} color="white" />
@@ -41,7 +41,7 @@ const Cards = () => {
                 key={index}
                 className="card ml-2 p-2 font-medium shadow-lg mt-6 cursor-pointer hover:-translate-y-3  transition-all duration-500"
               >
-                <img className=" h-60 md:h-72" src={currElm.image} alt="" />
+                <img className=" w-45 h-60 md:h-72" src={currElm.image} alt="" />
                 <h1>
                    {currElm.title}
                 </h1>
